@@ -3,7 +3,10 @@
 This project uses machine learning to re-evaluate the data used for my master's thesis. 
 
 Function of files in directory:
-- combine_files.ipynb -- Combines the raw .csv files found in raw_data
+- combine_files.ipynb --> Combines the raw .csv files found in raw_data
+- data_cleaning.ipynb --> Prepared data for analysis to keep regression files cleaner; 
+	added classifier columns
+- logistic_regression.ipynb --> Initial logistic regression model
 
 
 ## Data Cleaning Steps
