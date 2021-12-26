@@ -4,10 +4,14 @@ This project uses machine learning to re-evaluate the data used for my master's 
 
 Function of files in directory:
 - combine_files.ipynb --> Combines the raw .csv files found in raw_data
-- data_cleaning.ipynb --> Prepared data for analysis to keep regression files cleaner; 
-	added classifier columns
+- data_cleaning.ipynb --> Prepared data for analysis to keep regression files cleaner; added classifier columns
 - summary_stastics.ipynb --> run and visualize summary statistics
 - binary_modeling.ipynb --> Initial classification models for the binary outcomes of wet-dry and cold-hot
+
+Function of sub-directories:
+- outputs --> Destination directory for the output of scripts to protect against accidental overwriting of files
+- raw_data --> Contains the uncleaned raw data
+- working_data --> contains cleaned data files and files used in machine learning scripts
 
 
 ## Data Cleaning Steps
