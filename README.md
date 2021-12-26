@@ -22,13 +22,46 @@ Function of sub-directories:
 	- Using Jupyter Notebook, the raw .csv files were combined into one file. During combination, additional columns were added to the files, including a location and distance along the transect/river. The headers were also made consistent. 
 
 
+## Statistical Analysis and Visualization
+
+Prior to running machine learning models, data were statistically analyzed...
+
+### Tests for Normality
+
+As all the variables in the dataset are binary, they inherently cannot be normally distributed. 
+
+
 ## Machine Learning Algorithm Selection
 
 The ultimate goal of this project is to train a model with our input data so that the model can then classify an unknown input as either one of four outputs: cold-dry, cold-wet, hot-dry, or hot-wet. 
 
 Right away, regression type algorithms are excluded as the goal is to classify an input rather than numerical prediction. 
 
+### Logistic Regression Modeling
+
 The most basic classification machine learning model is logistic regression which analyzes multiple input variables to predict binary outcomes. While the desired output for this project is ultimately a non-binary output, we can start simple and break up our desired outputs into two binary outcomes: cold-hot and wet-dry. 
+
+Logistic regression does not require some of the same assumptions for linear regression, i.e., linear relationship between the independent and dependent variables, the independent variables do are not required to be normally distributed, and homoscedasticity is not required.  
+
+However, logistic regression requires (or at least performs best) when there is little to no multicollinearity among the independent variables. 
+
+There are certain assumptions required to be met for the best performance of logistic regression models:
+
+1) Binary logistic regression requires the dependent variable to be binary - met by this data set
+
+2) No repeated observations of the same data - met by this data set
+
+3) Little to no multicollinearity among the independent variables; meeting this assumption will be the most difficult for the data used in this project. To address multicollinearity, collinearity between independent variables will be tested using Variance Inflation Factor (VIF). Additionally, the model will be run using differing variations of the independent variables. 
+
+4) Assumption of linearity of independent variables and log odds - this is only required for continuous independent variables. 
+
+5) Requires large sample size - >1000 data points are included in this data set 
+
+
+### Support Vector Machines Modeling
+
+
+
 
 
 
