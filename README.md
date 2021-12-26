@@ -55,7 +55,7 @@ There are certain assumptions required to be met for the best performance of log
 
 4) Assumption of linearity of independent variables and log odds - this is only required for continuous independent variables. 
 
-5) Requires large sample size - >1000 data points are included in this data set 
+5) Requires large sample size  - >1000 data points are included in this data set 
 
 
 ### Support Vector Machines Modeling
